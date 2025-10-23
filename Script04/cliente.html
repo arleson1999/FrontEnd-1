@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Estilo Urbano" />
+    <title>Cadastro de cliente - estilo ubarno</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro de cliente - estilo ubarno</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="Produtos.html">Produtos</a></li>
+          <li><a href="Contatos.html">Contatos</a></li>
+          <li><a href="Pedidos.html">Pedidos</a></li>
+          <li><a href="Cliente.html">Cadstro de Cliente</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="cadastro">
+        <h2>Pados Pesooais</h2>
+        <form action="Cadastro" method="post" enctype="multipart/form-data">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            required
+            placeholder="Digite Seu Nome"
+          />
+          <p>
+            <label for="nome">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Digite Seu e-mail"
+            />
+          </p>
+          <p>
+            <label for="celular">Celular</label>
+            <input
+              type="tel"
+              id="celular"
+              name="celular"
+              required
+              placeholder="(xx) xxxxx-xxxx"
+            />
+          </p>
+          <p>
+            <label>Sexo</label>
+            <input type="radio" id="masculino" name="sexo" value="Masculino" />
+            <label for="Masculino">Mascilino</label>
+
+            <input type="radio" id="feminino" name="sexo" value="feminino" />
+            <label for="feminino">feminino</label>
+          </p>
+          <p>
+            <label for="data_nascimeto">Data de Nascimento</label>
+            <input type="date" id="data_nascimeto" name="data_nascimetor" />
+          </p>
+          <p>
+            <label for="cpf">CPF</label>
+            <input
+              type="number"
+              id="cpf"
+              name="cpf"
+              placeholder="Digite seu CPF"
+            />
+          </p>
+          <p>
+            <label for="foto">Foto</label>
+            <input type="file" id="foto" name="foto" />
+          </p>
+          <p>
+            <label for="url_rede_social">URL de Rede Social</label>
+            <input
+              type="url"
+              id="url_rede_social"
+              name="url_rede_social"
+              placeholder="http://"
+            />
+          </p>
+          <p>
+            <label for="bio">Bio do Cliente</label>
+            <textarea
+              name="bio"
+              id="bio"
+              rows="4"
+              placeholder="Digite uma breve descrição"
+            ></textarea>
+          </p>
+          <p>
+            <label for="usuaruo">Usuario</label>
+            <input
+              type="text"
+              id="Usuario"
+              name="Usuario"
+              required
+              placeholder="Escolha um nome de usuario"
+            />
+          </p>
+          <p>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required />
+          </p>
+          <h2>Dados da loja</h2>
+          <p>
+            <label for="como conheceu">Como Conheceu a loja</label>
+            <select name="como_conheceu" id="como_conheceu">
+              <option value="amigo">Amigo</option>
+              <option value="internet">Internet</option>
+              <option value="propaganda">Propaganda</option>
+              <option value="outro">Outros</option>
+            </select>
+          </p>
+          <p>
+            <label>Intens de Interesse</label>
+            <input
+              type="checkbox"
+              id="camisetas"
+              name="intens_interesse"
+              value="Camisetas"
+            />
+            <label for="camisetas">Camisetas</label>
+            <input
+              type="checkbox"
+              id="calcados"
+              name="intens_interesse"
+              value="Calcados"
+            />
+            <label for="calcados">Calçados</label>
+            <input
+              type="checkbox"
+              id="acessorios"
+              name="intens_interesse"
+              value="acessorios"
+            />
+            <label for="acessorios">Acessorios</label>
+          </p>
+          <p>
+            <label for="cor_preferida">Cor Preferida</label>
+            <input type="color" id="cor_preferida" name="cor_preferida" />
+          </p>
+          <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="Contatos">Contatos</a></li>
+          <li><a href="endereço">Endereço</a></li>
+          <li><a href="trabalhe_conosco">Trabalhe Conosco</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2024 Estilo Urbano. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
