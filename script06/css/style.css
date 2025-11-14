@@ -1,63 +1,119 @@
-.body,
-p {
-  padding: 0;
+* {
   margin: 0;
-  font-size: 1.5rem;
-  font-style: italic;
-  color: rgb(80, 78, 78);
-  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.principal {
-  width: 80%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 75% 20%;
-  grid-template-rows: 100px 450px 150px;
-  grid-template-areas: "cabecalho cabecalho" "secao barra-lateral" "rodape rodape";
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 
 header {
-  grid-area: cabecalho;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   background-color: #48cfe0;
 }
-section {
-  grid-area: secao;
-  background-color: #e05da1;
-}
-aside {
-  grid-area: barra-lateral;
-  background-color: #e0d475;
-}
-footer {
-  grid-area: rodape;
+
+nav {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #a1a7a8;
 }
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0;
+  height: 300px;
+}
+
+aside {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  background-color: #e0d475;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 300px;
+}
+
+.conteudo {
+  flex: 2;
+  width: 100%;
+  display: flex;
+  background-color: #e05da1;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #40db47;
+}
+
+footer div {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #a1a7a8;
+  padding: 10px;
+}
+
 @media (max-width: 992px) {
-  .principal {
-    grid-template-columns: 100%;
-    grid-template-areas: "cabecalho" "secao" "barra-lateral" "rodape";
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    order: 3;
+    width: 100%;
+  }
+
+  .conteudo {
+    width: 100%;
   }
 
   footer {
-    display: flex;
     flex-wrap: wrap;
-    text-align: center;
+  }
+
+  #parte1 #parte2 {
+    flex: 11 50%;
+  }
+  #parte3 {
+    flex: 11 100%;
   }
 }
 
-.parte1,
-.parte2,
-.parte3 {
-  width: 25%;
-  background-color: #5de050;
-}
-.parte2 {
-  width: 50%;
-  margin: 0 2px;
-}
+@media (max-width: 768px) {
+  footer {
+    flex-wrap: column;
+  }
 
-.parte3 {
-  margin: 0;
+  #parte1,
+  #parte2,
+  #parte3 {
+    flex: 11 100%;
+  }
 }
