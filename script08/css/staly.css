@@ -119,7 +119,7 @@ button[type="button"] {
 }
 
 button[type="submit"] {
-  background: #2563eb;
+  background: #2563eb; 
   color: #ffffff;
   box-shadow: 0 8px 18px rgba(37, 99, 235, 0.45);
 }
